@@ -399,13 +399,13 @@ div#div_330 {
                             </div>
                         </div>
                          <div class="ads_place">
-                                     @if(isset($ads['4_ads']) && $ads['4_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['4_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['4_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                                      @if(isset($ads['4_ads']) && $ads['4_ads'])
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['4_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['4_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                         </div>
                                                     
             
@@ -474,12 +474,12 @@ div#div_330 {
                         </div>
                          <div class="ads_place">
                                               @if(isset($ads['5_ads']) && $ads['5_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['5_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['5_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['5_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['5_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                         </div>
                        
                   
@@ -543,7 +543,7 @@ div#div_330 {
                                                                         @endforeach
                                                                     </div>
                                                                 </div>
-                                                            </div>
+                                                            </div> 
                                                         </div>
                                                     </div>
                                                 </div>
@@ -678,7 +678,9 @@ div#div_330 {
                                                         <div class="poll_button">
                                                             <div style="width: 35%;" id="submit_the_poll" class="result_button fl">
                                                                 <button style="    background: #b99409; color: #fff; padding: 0px 10px; font-size: 15px;" type="submit" id="vote_provide">ভোট দিন</button></div>
-                                                            <div style="background: #b99409;" class="old_result nomarg"><a style="color:#fff;" href="/poll">পুরোনো ফলাফল</a></div>
+                                                            <div style="background: #b99409;" class="old_result nomarg"><a style="color:#fff;" href="/poll">
+
+**********                                                            <div style="background: #b99409;" class="old_result nomarg"><a style="color:#fff;" href="/poll">পুরোনো ফলাফল</a></div>
                                                         </div>
                                                     </form>
                                                         <div class="total_vote_container">ভোট দিয়েছেন <span class="total_vote">{{ $poll->user_count}}</span> জন <br /></div>
@@ -706,13 +708,13 @@ div#div_330 {
                             </div>
                         </div>
  <div class="ads_place">
-                                   @if(isset($ads['6_ads']) && $ads['6_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['6_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['6_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif     
+                                    @if(isset($ads['6_ads']) && $ads['6_ads'])
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['6_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['6_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif      
                         </div>
 
             
@@ -883,13 +885,13 @@ div#div_330 {
                             </div>
                         </div>
                          <div class="ads_place">
-                            @if(isset($ads['7_ads']) && $ads['7_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['7_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['7_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                             @if(isset($ads['7_ads']) && $ads['7_ads'])
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['7_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['7_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                         </div>
                            
                         
@@ -950,7 +952,7 @@ div#div_330 {
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        @endforeach
+                                                                                                                                     @endforeach
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -1047,7 +1049,7 @@ div#div_330 {
 
                                                                                     <div class="summery">
                                                                                         {!! Str::limit(strip_tags($post->getTranslation('description')), $limit = 250, $end = '...') !!}
-                                                                                        <!--<span class="excerpt_more" title="বিস্তারিত"><span>বিস্তারিত</span></span>-->
+                                                                                        <!--<span class="excerpt_more" title="বিস্তারিত"><span>বিস্তارিত</span></span>-->
                                                                                     </div>
                                                                                 </div>
                                                                             </div>
@@ -1114,12 +1116,12 @@ div#div_330 {
                                             <div class="contents_listing hide_this_desktop widget">
                                                 <div id="contents_722_ajax_container" class="contents summery_view">
                                                     @if(isset($ads['3_ads']) && $ads['3_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['3_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['3_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['3_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['3_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                                                 </div>
                                             </div>
                                         </div>
@@ -1130,13 +1132,13 @@ div#div_330 {
                             </div>
                         </div>
                          <div class="ads_place">
-                                 @if(isset($ads['8_ads']) && $ads['8_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['8_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['8_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                                  @if(isset($ads['8_ads']) && $ads['8_ads'])
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['8_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['8_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                         </div>
                     
                         
@@ -1308,13 +1310,13 @@ div#div_330 {
                             </div>
                         </div>
                         <div class="ads_place">
-                              @if(isset($ads['9_ads']) && $ads['9_ads'])
-    <div class="advertisment w-100 bg-danger text-white mt-3">
-        <a class="ads-link" target="_blank" href="{{ $ads['9_ads']->link }}">
-            <img src="{{ asset('uploads/CustomAds/' . $ads['9_ads']->image) }}" alt="">
-        </a>
-    </div>
-@endif
+                               @if(isset($ads['9_ads']) && $ads['9_ads'])
+                                                        <div class="advertisment w-100 bg-danger text-white mt-3">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['9_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['9_ads']->image) }}" alt="">
+                                                            </a>
+                                                        </div>
+                                                    @endif
                         </div>
                        
                         <div id="wrapper_417" class="wrapper bbash container_top_padding jw_progressive_load">
@@ -1361,6 +1363,7 @@ div#div_330 {
                                                         <div class="col col1">
                                                             <div class="col_in">
                                                                 <div class="listing">
+                                                                    @if(isset($dynamic_9th_category_2nd_post) && !empty($dynamic_9th_category_2nd_post))
                                                                     @foreach ($dynamic_9th_category_2nd_post as $post)
                                                                     <div class="each col_in has_image image_left content_capability_blog content_type_news responsive_image_hide_">
                                                                         <div class="image">
@@ -1383,6 +1386,9 @@ div#div_330 {
                                                                         </div>
                                                                     </div>
                                                                     @endforeach
+                                                                    @else
+                                                                    <p>No posts available</p>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1434,7 +1440,8 @@ div#div_330 {
                                                         <div class="col col1">
                                                             <div class="col_in">
                                                                 <div class="listing">
-                                                                    @foreach ($dynamic_10th_category_2nd_post as $post)
+                                                                    @if(isset($dynamic_10th_category_2nd_post) && !empty($dynamic_10th_category_2nd_post))
+                                                                    @foreach                                                      @foreach ($dynamic_10th_category_2nd_post as $post)
                                                                     <div class="each col_in has_image image_left content_capability_blog content_type_news responsive_image_hide_">
                                                                         <div class="image">
                                                                             <span class="jwImgWrap" style="padding-bottom: 56.25%;">
@@ -1456,6 +1463,9 @@ div#div_330 {
                                                                         </div>
                                                                     </div>
                                                                     @endforeach
+                                                                    @else
+                                                                    <p>No posts available</p>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1465,7 +1475,7 @@ div#div_330 {
                                         </div>
                                     </div>
                                 </div>
-                                @if(is_array($dynamic_11th_category_1st_post))
+                                @if(isset($dynamic_11th_category_1st_post) && is_array($dynamic_11th_category_1st_post))
                                 <div id="div_420" class="p_b _col">
                                     <div class="hf_wrap">
                                         <div class="color_theme_">
@@ -1508,6 +1518,7 @@ div#div_330 {
                                                         <div class="col col1">
                                                             <div class="col_in">
                                                                 <div class="listing">
+                                                                    @if(isset($dynamic_11th_category_2nd_post) && !empty($dynamic_11th_category_2nd_post))
                                                                     @foreach ($dynamic_11th_category_2nd_post as $post)
                                                                     <div class="each col_in has_image image_left content_capability_blog content_type_news responsive_image_hide_">
                                                                         <div class="image">
@@ -1530,6 +1541,9 @@ div#div_330 {
                                                                         </div>
                                                                     </div>
                                                                     @endforeach
+                                                                    @else
+                                                                    <p>No posts available</p>
+                                                                    @endif
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -1543,10 +1557,10 @@ div#div_330 {
                             </div>
                         </div>
                                  <div class="ads_place">
-                      @if ($ten_ads)
+                      @if(isset($ads['10_ads']) && $ads['10_ads'])
                                                         <div class="advertisment w-100 bg-danger text-white mt-3">
-                                                            <a class="ads-link" target="_blank" href="{{$ten_ads->link}}">
-                                                                <img src="{{ asset('uploads/CustomAds/' . $ten_ads->image) }}" alt="">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['10_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['10_ads']->image) }}" alt="">
                                                             </a>
                                                         </div>
                                                     @endif
@@ -1882,10 +1896,10 @@ div#div_330 {
                         
                         {{-- end --}}
                                <div class="ads_place">
-                      @if ($eleven_ads)
+                      @if(isset($ads['11_ads']) && $ads['11_ads'])
                                                         <div class="advertisment w-100 bg-danger text-white mt-3">
-                                                            <a class="ads-link" target="_blank" href="{{$eleven_ads->link}}">
-                                                                <img src="{{ asset('uploads/CustomAds/' . $eleven_ads->image) }}" alt="">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['11_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['11_ads']->image) }}" alt="">
                                                             </a>
                                                         </div>
                                                     @endif
@@ -2030,10 +2044,10 @@ div#div_330 {
                             </div>
                         </div>
                                 <div class="ads_place">
-                      @if ($twelve_ads)
+                      @if(isset($ads['12_ads']) && $ads['12_ads'])
                                                         <div class="advertisment w-100 bg-danger text-white mt-3">
-                                                            <a class="ads-link" target="_blank" href="{{$twelve_ads->link}}">
-                                                                <img src="{{ asset('uploads/CustomAds/' . $twelve_ads->image) }}" alt="">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['12_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['12_ads']->image) }}" alt="">
                                                             </a>
                                                         </div>
                                                     @endif
@@ -2147,10 +2161,10 @@ div#div_330 {
                         </div>
                         
                                 <div class="ads_place">
-                      @if ($thirteen_ads)
+                      @if(isset($ads['13_ads']) && $ads['13_ads'])
                                                         <div class="advertisment w-100 bg-danger text-white mt-3">
-                                                            <a class="ads-link" target="_blank" href="{{$thirteen_ads->link}}">
-                                                                <img src="{{ asset('uploads/CustomAds/' . $thirteen_ads->image) }}" alt="">
+                                                            <a class="ads-link" target="_blank" href="{{ $ads['13_ads']->link }}">
+                                                                <img src="{{ asset('uploads/CustomAds/' . $ads['13_ads']->image) }}" alt="">
                                                             </a>
                                                         </div>
                                                     @endif
