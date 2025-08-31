@@ -668,22 +668,24 @@ div#div_330 {
                                                         <div class="poll_bottom">
                                                           
                                                                @csrf
-                                                                <input type="hidden" name="the_poll_id" value="{{ $poll->id}}" />
-                                                                <label><input type="radio" class="jPollY" name="the_vote" value="yes" />হ্যাঁ</label>
-                                                                <label><input type="radio" class="jPollN" name="the_vote" value="no" />না</label>
-                                                                <label><input type="radio" class="jPollNC" name="the_vote" value="no_comment" />মন্তব্য নেই</label>
-                                                                <br>
-                                                         
-                                                            
-                                                        <div class="poll_button">
-                                                            <div style="width: 35%;" id="submit_the_poll" class="result_button fl">
-                                                                <button style="    background: #b99409; color: #fff; padding: 0px 10px; font-size: 15px;" type="submit" id="vote_provide">ভোট দিন</button></div>
-                                                            <div style="background: #b99409;" class="old_result nomarg"><a style="color:#fff;" href="/poll">
+    <input type="hidden" name="the_poll_id" value="{{ $poll->id}}" />
+    
+    <label><input type="radio" class="jPollY" name="the_vote" value="yes" />হ্যাঁ</label>
+    <label><input type="radio" class="jPollN" name="the_vote" value="no" />না</label>
+    <label><input type="radio" class="jPollNC" name="the_vote" value="no_comment" />মন্তব্য নেই</label>
+    <br>
+    
+    <div class="poll_button">
+        <div style="width: 35%;" id="submit_the_poll" class="result_button fl">
+            <button style="background: #b99409; color: #fff; padding: 0px 10px; font-size: 15px;" type="submit" id="vote_provide">ভোট দিন</button>
+        </div>
+        <div style="background: #b99409;" class="old_result nomarg">
+            <a style="color:#fff;" href="/poll">পুরোনো ফলাফল</a>
+        </div>
+    </div>
+</form>
 
-**********                                                            <div style="background: #b99409;" class="old_result nomarg"><a style="color:#fff;" href="/poll">পুরোনো ফলাফল</a></div>
-                                                        </div>
-                                                    </form>
-                                                        <div class="total_vote_container">ভোট দিয়েছেন <span class="total_vote">{{ $poll->user_count}}</span> জন <br /></div>
+<div class="total_vote_container">ভোট দিয়েছেন <span class="total_vote">{{ $poll->user_count}}</span> জন <br /></div>
                                                     </div>
                                                 </div>
                                                
